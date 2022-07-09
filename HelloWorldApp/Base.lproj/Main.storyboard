@@ -22,30 +22,47 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-0V-B5B">
-                                <rect key="frame" x="112" y="734" width="190" height="48"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4gR-eH-uon">
+                                <rect key="frame" x="82" y="690" width="250" height="112"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-0V-B5B">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Show Text">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eud-QY-36P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Im-KA-cle">
+                                        <rect key="frame" x="0.0" y="64" width="250" height="48"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Do Something">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHh-Pt-UP2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="lVG-uj-lmV"/>
+                                    <constraint firstAttribute="width" constant="250" id="JM0-j1-taG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Show Text">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eud-QY-36P"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PIj-0V-B5B" secondAttribute="bottom" constant="80" id="4C0-Us-hcL"/>
                             <constraint firstItem="WaC-g2-enS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="7pb-83-exS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4gR-eH-uon" secondAttribute="bottom" constant="60" id="Mub-42-XG3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WaC-g2-enS" secondAttribute="trailing" constant="93" id="NlK-o3-MsM"/>
                             <constraint firstItem="WaC-g2-enS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="SCc-oB-Q9n"/>
-                            <constraint firstItem="PIj-0V-B5B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLX-BB-eZ3"/>
+                            <constraint firstItem="4gR-eH-uon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g6b-4h-VkH"/>
                         </constraints>
                     </view>
                     <connections>
